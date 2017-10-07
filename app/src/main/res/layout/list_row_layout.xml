@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:weightSum="3">
+
+
+    <CheckBox
+        android:id="@+id/task_title"
+        android:layout_width="220dp"
+        android:layout_height="64dp"
+        android:text="CheckBox"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.0" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="220dp"
+        android:layout_height="30dp"
+        android:text="TextView"
+        android:textStyle="bold"
+        android:layout_marginTop="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/task_title"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="@+id/task_title"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="@+id/task_title" />
+
+    <TextView
+        android:id="@+id/todotime"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:text="TextView"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/date"
+        android:layout_marginBottom="0dp"
+        app:layout_constraintTop_toTopOf="@+id/date"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="0dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/date"
+        android:layout_marginLeft="0dp"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintVertical_bias="0.8" />
+</android.support.constraint.ConstraintLayout>
